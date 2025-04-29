@@ -1,11 +1,39 @@
-# React + TypeScript + Vite
+# Admin Panel (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple responsive admin panel to display and filter users fetched from an external API.
 
-Currently, two official plugins are available:
+## Technologies
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fetch and display users from JSONPlaceholder
+- Real-time client-side filtering by name
+- Loading spinner and error handling
+- User detail modal with extended information
+
+## Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start development server:
+   ```bash
+   npm run dev
+   ```
+
+## Project Structure
+```
+src/
+├── components/    # UI components (SearchBar, UserList)
+├── hooks/         # Custom hooks (useUsers)
+├── services/      # API calls (userService)
+├── types/         # TypeScript interfaces (User)
+├── styles/        # Tailwind CSS and global styles
+└── App.tsx        # Main application layout
+```
 
 ## Expanding the ESLint configuration
 
